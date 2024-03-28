@@ -9,13 +9,15 @@ function calculateNetSalary() {
     let grossSalary =basicSalary + benefits;
     let netSalary = grossSalary - payee - nhifDeductions - nssfDeductions;
 
-    document.getElementById('net-salary-output').innerHTML = 
-    <p>Gross Salary:$(grossSalary)</p>
-    <p>Payee (Tax): ${payee}</p>
+    document.getElementById('net-salary-output').innerHTML = `
+   <P>Gross Salary: ${grossSalary</P>
+    <p>payee (Tax): ${payee}</p>
     <p>NHIF Deductions: ${nhifDeductions}</p>
-    <P>NSSF Deductions: ${nssfDeductions</P>
-    <p>Net Salary: ${netSalary</p>
-    ;
+    <p>NSSF Deductions: ${nssfDeductions}</p>
+    <P>Net Salary: ${netSalary}</P>
+    `;
+
+    
 }
 
 functioncalculatePayee(salary) {
